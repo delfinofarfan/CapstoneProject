@@ -1,14 +1,23 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 .header {
     min-height: 100vh;
     width: 100%;
-   background-image: linear-gradient(rgba(57,18,25,0.7),rgba(57,18,25,0.7)),url(pictures/alabama.jpg);
+   background-image: linear-gradient(rgba(141,28,49,0.7),rgba(141,28,49,0.7)),url(pictures/alabama.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+}
+#nav-background {
+    background-color: #080705;
+}
+#about {
+    color: #080705;
+    font-weight: bolder;
+    background: linear-gradient(rgba(255,255,250,0.6),rgba(255,255,250,0.6));
 }
 nav {
     display: flex;
@@ -19,3 +28,90 @@ nav {
 nav img {
     width: 150px;
 }
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links  ul  li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px ;
+    position: relative;
+}
+.nav-links ul li  a {
+    color: #fffffa;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links  ul  li::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    display: block;
+    margin: auto;
+    background: #080705;
+    transition: 0.5s;
+}
+.nav-links  ul  li:hover::after {
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: #fffffa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+    color: #080705;
+}
+.text-box p {
+    font-size: 14px;
+    color: #fffffa;
+}
+.testButton {
+    display: inline-block;
+    text-decoration: none;
+    color: #fffffa;
+    border: 3px solid #080705;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.testButton:hover {
+    border: 3px solid #912F40;
+    background: #912F40;
+    transition: .5s;
+}
+nav .fa {
+    display:none;
+}
+@media(max-width: 700px){
+     .text-box h1{ 
+        font-size: 20px; 
+     }
+     .nav-links ul li {
+         display: block;
+     }
+     .nav-links {
+         position: absolute;
+         background: #912F40;
+         height: 100vh; 
+         width: 200px;
+         top: 0;
+         right: 0;
+         text-align: left;
+         z-index: 2;
+     }
+     .nav-links fa {
+         display: block;
+         color: pink;
+         font-size: 10px;
+         cursor: pointer;
+     }
+    }
