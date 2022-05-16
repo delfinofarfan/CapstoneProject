@@ -6,7 +6,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-   background-image: linear-gradient(rgba(141,28,49,0.7),rgba(141,28,49,0.7)),url(pictures/alabama.jpg);
+   background-image: linear-gradient(rgba(141,28,49,0.7),rgba(141,28,49,0.7)),url(assets/img/alabama.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -92,8 +92,8 @@ nav .fa {
     display:none;
 }
 @media(max-width: 700px){
-     .text-box h1{ 
-        font-size: 20px; 
+     .text-box h1{
+        font-size: 20px;
      }
      .nav-links ul li {
          display: block;
@@ -101,7 +101,7 @@ nav .fa {
      .nav-links {
          position: absolute;
          background: #912F40;
-         height: 100vh; 
+         height: 100vh;
          width: 200px;
          top: 0;
          right: 0;
