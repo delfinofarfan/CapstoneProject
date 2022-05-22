@@ -3,7 +3,6 @@ import bioPic from "../../assets/img/profilepicture.jpeg";
 
 export default () => html`
   <section>
-    <h1>ABOUT US</h1>
     <p id="about">
       Farfan Fantasy Football was created by myself, Delfino Farfan. I'm a
       graduate of Texas A&M University, and studied Leadership Education and

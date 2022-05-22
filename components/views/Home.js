@@ -10,5 +10,5 @@ export default () => html`
       >Fantasy Football, Dynasty Fantasy Football, and Devy Fantasy Football.</b
     >
   </p>
-  <a href="" class="testButton">User Testimonials</a>
+  <a href="/Testimonials" class="testButton">User Testimonials</a>
 `;

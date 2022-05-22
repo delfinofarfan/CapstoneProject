@@ -1,8 +1,7 @@
 import html from "html-literal";
-
+import logo from "../assets/img/clearlogo.png";
 export default links => html`
   <nav id="nav-background">
-    <img src="assets/img/clearlogo.png" />
     <i class="fa fa-window-close"></i>
     <ul class="nav">
       ${links.map(
@@ -10,5 +9,6 @@ export default links => html`
           `<li><a href="/${link.title}" title="${link.title}" data-navigo>${link.text}</a><li>`
       )}
     </ul>
+    <img src="${logo}" />
   </nav>
 `;

@@ -1,6 +1,6 @@
 export default [
   { title: "Home", text: "Home" },
-  { title: "FFFscore", text: "FFF Score" },
+  { title: "FFFscore", text: "FFFScore" },
   { title: "Filmgrade", text: "Film Grade" },
   { title: "Metrics", text: "Metrics" },
   { title: "Aboutus", text: "About Us" },
