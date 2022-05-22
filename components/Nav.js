@@ -2,12 +2,12 @@ import html from "html-literal";
 
 export default links => html`
   <nav id="nav-background">
-    <a href="index.html"><img src="pictures/clearlogo.png"/></a>
+    <img src="assets/img/clearlogo.png" />
     <i class="fa fa-window-close"></i>
-    <ul class="nav-links">
+    <ul class="nav">
       ${links.map(
         link =>
-          `<li><a href="/${link.title}" title ="${link.title}" data-navigo>${link.text}</a><li>`
+          `<li><a href="/${link.title}" title="${link.title}" data-navigo>${link.text}</a><li>`
       )}
     </ul>
   </nav>

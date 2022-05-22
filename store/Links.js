@@ -1,9 +1,9 @@
 export default [
-  { title: "Aboutus", text: "About Us" },
-  { title: "Contact", text: "Contact" },
+  { title: "Home", text: "Home" },
   { title: "FFFscore", text: "FFF Score" },
   { title: "Filmgrade", text: "Film Grade" },
-  { title: "Home", text: "Home" },
   { title: "Metrics", text: "Metrics" },
-  { title: "Testimonials", text: "Testimonials" }
+  { title: "Aboutus", text: "About Us" },
+  { title: "Testimonials", text: "Testimonials" },
+  { title: "Contact", text: "Contact" }
 ];

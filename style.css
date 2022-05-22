@@ -12,18 +12,25 @@
     position: relative;
 }
 #nav-background {
-    background-color: #080705;
+    background-color: black;
+}
+#footer-background {
+    background-image: url(assets/img/filledlogo.png);
+    background-size:auto;
+    width: 100%;
+    height: 100%;
 }
 #about {
     color: #080705;
     font-weight: bolder;
     background: linear-gradient(rgba(255,255,250,0.6),rgba(255,255,250,0.6));
 }
-nav {
+.nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
 nav img {
     width: 150px;
