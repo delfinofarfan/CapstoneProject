@@ -18,6 +18,64 @@ function render(state = store.Home) {
   router.updatePageLinks();
 }
 
+// if (state.view === "Filmgrade") {
+//   const requestData = {
+//     player: name.value,
+//     filmgrade: grade.value
+//   };
+
+//   axios
+//     .post(`${process.env.FILMGRADES_API_URL}`, requestData)
+//     .then(response => {
+//       console.log(response.data);
+//       store.Filmgrade.filmgrades.push(response.data);
+//       router.navigate("/Filmgrade");
+//     })
+//     .catch(error => {
+//       console.log("It puked", error);
+//     });
+// }
+// if (state.view === "Fscore") {
+//   const requestData = {
+//     player: name.value,
+//     fscore: fscore.value
+//   };
+
+//   axios
+//     .post(`${process.env.FSCORES_API_URL}`, requestData)
+//     .then(response => {
+//       console.log(response.data);
+//       store.Fscore.fscores.push(response.data);
+//       router.navigate("/Fscore");
+//     })
+//     .catch(error => {
+//       console.log("It puked", error);
+//     });
+// }
+// if (state.view === "Metrics") {
+//   const requestData = {
+//     player: player.value,
+//     height: height.value,
+//     weight: weight.value,
+//     age: age.value,
+//     classification: classification.value,
+//     fourtytime: fourtytime.value,
+//     vertical: vertical.value,
+//     shuttle: shuttle.value
+//   };
+
+//   axios
+//     .post(`${process.env.METRICS_API_URL}`, requestData)
+//     .then(response => {
+//       console.log(response.data);
+//       store.Metrics.metrics.push(response.data);
+//       router.navigate("/Metric");
+//     })
+//     .catch(error => {
+//       console.log("It puked", error);
+//     });
+// }
+
 router.hooks({
   before: (done, params) => {
     let view = "Home";
