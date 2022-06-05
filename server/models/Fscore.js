@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const fscoreSchema = new mongoose.Schema({
-  player: {
+  name: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/

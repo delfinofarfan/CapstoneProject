@@ -1,4 +1,5 @@
 export default {
   header: "Film Grade",
-  view: "Filmgrade"
+  view: "Filmgrade",
+  filmgrade: {}
 };

@@ -18,64 +18,6 @@ function render(state = store.Home) {
   router.updatePageLinks();
 }
 
-// if (state.view === "Filmgrade") {
-//   const requestData = {
-//     player: name.value,
-//     filmgrade: grade.value
-//   };
-
-//   axios
-//     .post(`${process.env.FILMGRADES_API_URL}`, requestData)
-//     .then(response => {
-//       console.log(response.data);
-//       store.Filmgrade.filmgrades.push(response.data);
-//       router.navigate("/Filmgrade");
-//     })
-//     .catch(error => {
-//       console.log("It puked", error);
-//     });
-// }
-// if (state.view === "Fscore") {
-//   const requestData = {
-//     player: name.value,
-//     fscore: fscore.value
-//   };
-
-//   axios
-//     .post(`${process.env.FSCORES_API_URL}`, requestData)
-//     .then(response => {
-//       console.log(response.data);
-//       store.Fscore.fscores.push(response.data);
-//       router.navigate("/Fscore");
-//     })
-//     .catch(error => {
-//       console.log("It puked", error);
-//     });
-// }
-// if (state.view === "Metrics") {
-//   const requestData = {
-//     player: player.value,
-//     height: height.value,
-//     weight: weight.value,
-//     age: age.value,
-//     classification: classification.value,
-//     fourtytime: fourtytime.value,
-//     vertical: vertical.value,
-//     shuttle: shuttle.value
-//   };
-
-//   axios
-//     .post(`${process.env.METRICS_API_URL}`, requestData)
-//     .then(response => {
-//       console.log(response.data);
-//       store.Metrics.metrics.push(response.data);
-//       router.navigate("/Metric");
-//     })
-//     .catch(error => {
-//       console.log("It puked", error);
-//     });
-// }
-
 router.hooks({
   before: (done, params) => {
     let view = "Home";
@@ -103,6 +45,39 @@ router.hooks({
         })
         .catch(err => {
           console.log(err);
+          done();
+        });
+    } else if (store.view === "Filmgrade") {
+      axios
+        .get(`${process.env.FILMGRADES_API_URL}`)
+        .then(response => {
+          store.Filmgrade.filmgrades = response.data;
+          done();
+        })
+        .catch(error => {
+          console.log("Filmgrades not loading", error);
+          done();
+        });
+    } else if (store.view === "Fscore") {
+      axios
+        .get(`${process.env.FSCORES_API_URL}`)
+        .then(response => {
+          store.Fscore.fscores = response.data;
+          done();
+        })
+        .catch(error => {
+          console.log("FScores not loading", error);
+          done();
+        });
+    } else if (store.view === "Metrics") {
+      axios
+        .get(`${process.env.METRICS_API_URL}`)
+        .then(response => {
+          store.Metrics.metrics = response.data;
+          done();
+        })
+        .catch(error => {
+          console.log("Metrics not loading", error);
           done();
         });
     } else {

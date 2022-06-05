@@ -43,7 +43,7 @@ router.put("/:id", (request, response) => {
       $set: {
         // Take note that the customer is not included, so it can't
         player: body.name,
-        fscore: body.fscore
+        fscore: body.score
       }
     },
     {

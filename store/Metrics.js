@@ -1,4 +1,5 @@
 export default {
   header: "Metrics",
-  view: "Metrics"
+  view: "Metrics",
+  metrics: {}
 };
