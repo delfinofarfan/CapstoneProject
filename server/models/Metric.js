@@ -8,12 +8,12 @@ const metricSchema = new mongoose.Schema({
   },
   height: {
     type: String,
-    required: true,
+    required: false,
     validate: /^[A-Za-z0-9 ]*$/
   },
   weight: {
     type: String,
-    required: true,
+    required: false,
     validate: /^[A-Za-z0-9 ]*$/
   },
   age: {
@@ -23,22 +23,22 @@ const metricSchema = new mongoose.Schema({
   },
   classification: {
     type: String,
-    required: true,
+    required: false,
     validate: /^[A-Za-z0-9 ]*$/
   },
   fourtytime: {
     type: String,
-    required: true,
+    required: false,
     validate: /^[A-Za-z0-9 ]*$/
   },
   vertical: {
     type: String,
-    required: true,
+    required: false,
     validate: /^[A-Za-z0-9 ]*$/
   },
   shuttle: {
     type: String,
-    required: true,
+    required: false,
     validate: /^[A-Za-z0-9 ]*$/
   }
 });

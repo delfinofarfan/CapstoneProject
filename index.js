@@ -47,18 +47,21 @@ router.hooks({
           console.log(err);
           done();
         });
-    } else if (store.view === "Filmgrade") {
+    }
+    if (view === "Filmgrade") {
       axios
         .get(`${process.env.FILMGRADES_API_URL}`)
         .then(response => {
-          store.Filmgrade.filmgrades = response.data;
+          console.log(response);
+          store.Filmgrade.filmgrade = response.data;
           done();
         })
         .catch(error => {
           console.log("Filmgrades not loading", error);
           done();
         });
-    } else if (store.view === "Fscore") {
+    }
+    if (view === "Fscore") {
       axios
         .get(`${process.env.FSCORES_API_URL}`)
         .then(response => {
@@ -69,7 +72,7 @@ router.hooks({
           console.log("FScores not loading", error);
           done();
         });
-    } else if (store.view === "Metrics") {
+    } else if (view === "Metrics") {
       axios
         .get(`${process.env.METRICS_API_URL}`)
         .then(response => {
