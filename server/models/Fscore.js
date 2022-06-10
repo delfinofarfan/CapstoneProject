@@ -7,9 +7,8 @@ const fscoreSchema = new mongoose.Schema({
     validate: /^[A-Za-z0-9 ]*$/
   },
   fscore: {
-    type: String,
-    required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    type: Number,
+    required: true
   }
 });
 

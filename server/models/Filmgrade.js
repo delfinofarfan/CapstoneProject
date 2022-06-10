@@ -7,9 +7,8 @@ const filmgradeSchema = new mongoose.Schema({
     validate: /^[A-Za-z0-9 ]*$/
   },
   filmgrade: {
-    type: String,
-    required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    type: Number,
+    required: true
   }
 });
 

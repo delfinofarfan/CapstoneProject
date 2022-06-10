@@ -6,11 +6,10 @@ export default state => html`
       <th>Name</th>
       <th>Score</th>
     </tr>
+    ${state.fscores
+      .map(fscore => {
+        return `<><td>${fscore.name}</td><td>${fscore.score}</td>`;
+      })
+      .join("")}
   </table>
 `;
-
-// ${state.fscores
-//   // .map(fscore => {
-//     return `<><td>${fscore.name}</td><td>${fscore.score}</td>`;
-//   })
-//   .join("")}

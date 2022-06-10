@@ -27,19 +27,12 @@ const metricSchema = new mongoose.Schema({
     validate: /^[A-Za-z0-9 ]*$/
   },
   fourtytime: {
-    type: String,
-    required: false,
-    validate: /^[A-Za-z0-9 ]*$/
+    type: Number,
+    required: false
   },
   vertical: {
-    type: String,
-    required: false,
-    validate: /^[A-Za-z0-9 ]*$/
-  },
-  shuttle: {
-    type: String,
-    required: false,
-    validate: /^[A-Za-z0-9 ]*$/
+    type: Number,
+    required: false
   }
 });
 

@@ -12,4 +12,6 @@ export default state => html`
       })
       .join("")}
   </table>
+
+  <code>${JSON.stringify(state)}</code>
 `;
