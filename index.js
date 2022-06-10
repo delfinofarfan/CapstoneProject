@@ -9,6 +9,7 @@ dotenv.config();
 const router = new Navigo("/");
 
 function render(state = store.Home) {
+  console.log(state);
   document.querySelector("#root").innerHTML = `
   ${Nav(store.Links)}
   ${Header(state)}
@@ -24,7 +25,7 @@ router.hooks({
     if (params && params.data && params.data.view) {
       view = capitalize(params.data.view);
     }
-
+    console.log(view);
     if (view === "Home") {
       axios
         .get(
@@ -47,6 +48,41 @@ router.hooks({
           console.log(err);
           done();
         });
+    } else if (view === "Filmgrade") {
+      axios
+        .get(`${process.env.FILMGRADES_API_URL}`)
+        .then(response => {
+          console.log(response);
+          store.Filmgrade.filmgrade = response.data;
+          console.log(store.Filmgrade.filmgrade);
+          done();
+        })
+        .catch(error => {
+          console.log("Filmgrades not loading", error);
+          done();
+        });
+    } else if (view === "Fscore") {
+      axios
+        .get(`${process.env.FSCORES_API_URL}`)
+        .then(response => {
+          store.Fscore.fscores = response.data;
+          done();
+        })
+        .catch(error => {
+          console.log("FScores not loading", error);
+          done();
+        });
+    } else if (view === "Metrics") {
+      axios
+        .get(`${process.env.METRICS_API_URL}`)
+        .then(response => {
+          store.Metrics.metrics = response.data;
+          done();
+        })
+        .catch(error => {
+          console.log("Metrics not loading", error);
+          done();
+        });
     } else {
       done();
     }
@@ -58,6 +94,7 @@ router
     "/": () => render(),
     ":view": params => {
       let view = capitalize(params.data.view);
+      console.log(view);
       render(store[view]);
     }
   })
