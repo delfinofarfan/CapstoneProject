@@ -8,10 +8,8 @@ export default state => html`
     </tr>
     ${state.filmgrade
       .map(filmgrade => {
-        return `<><td>${filmgrade.name}</td><td>${filmgrade.grade}</td>`;
+        return `<td>${filmgrade.name}</td><td>${filmgrade.grade}</td>`;
       })
       .join("")}
   </table>
-
-  <code>${JSON.stringify(state)}</code>
 `;

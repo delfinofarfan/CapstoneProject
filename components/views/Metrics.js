@@ -11,7 +11,7 @@ export default state => html`
     </tr>
     ${state.metrics
       .map(metric => {
-        return `<><td>${metric.name}</td><td>${metric.height}</td><td>${metric.weight}</td><td>${metric.fourtytime}</td><td>${metric.vertical}</td>`;
+        return `<td>${metric.name}</td><td>${metric.height}</td><td>${metric.weight}</td><td>${metric.fourtytime}</td><td>${metric.vertical}</td>`;
       })
       .join("")}
   </table>
