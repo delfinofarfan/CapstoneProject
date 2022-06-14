@@ -4,14 +4,12 @@ export default state => html`
   <table id="football">
     <tr>
       <th>Name</th>
-      <th>Grade</th>
+      <th>Film Grade</th>
     </tr>
     ${state.filmgrade
       .map(filmgrade => {
-        return `<><td>${filmgrade.name}</td><td>${filmgrade.grade}</td>`;
+        return `<tr><td>${filmgrade.player}</td><td>${filmgrade.filmgrade}</td></tr>`;
       })
       .join("")}
   </table>
-
-  <code>${JSON.stringify(state)}</code>
 `;
