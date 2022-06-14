@@ -4,11 +4,11 @@ export default state => html`
   <table id="football">
     <tr>
       <th>Name</th>
-      <th>Fscore</th>
+      <th>FFF Score</th>
     </tr>
     ${state.fscores
       .map(fscore => {
-        return `<td>${fscore.name}</td><td>${fscore.fscore}</td>`;
+        return `<tr><td>${fscore.name}</td><td>${fscore.fscore}</td></tr>`;
       })
       .join("")}
   </table>
