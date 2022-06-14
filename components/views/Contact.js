@@ -2,7 +2,7 @@ import html from "html-literal";
 export default () => html`
   <section>
     <form
-      id="Contact"
+      id="form"
       name="simple-contact-form"
       accept-charset="utf-8"
       action="https://formspree.io/f/meqnpdzw"

@@ -33,11 +33,21 @@ footer {
     height: 4.5em;
     width:auto;
 }
-
+#form {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
 #about {
     color: #080705;
     font-weight: bolder;
-    background: #fffffa
+    background: #fffffa;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+#bio {
+    margin: 1rem;
 }
 .nav {
     display: flex;
