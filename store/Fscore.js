@@ -1,5 +1,5 @@
 export default {
-  header: "Fscore",
+  header: "FFF Score",
   view: "Fscore",
   fscore: []
 };
