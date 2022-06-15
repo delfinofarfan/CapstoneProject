@@ -10,7 +10,7 @@ export default state => html`
     allowed me to become more competitive than ever!" - Jeff G.
   </p>
   <p class="text-box">
-    this is where the quote goes${state.testimonials.content} ${state.firstname}
-    ${state.lastname}
+    this is where the quote goes${state.data.content} ${state.data.firstname}
+    ${state.data.lastname}
   </p>
 `;
