@@ -4,14 +4,14 @@ import bioPic from "../../assets/img/profilepicture.jpeg";
 export default () => html`
   <section id="bio">
     <img src="${bioPic}" alt="me" />
-    <p id="about">
+    <p class="about">
       Farfan Fantasy Football was created by myself, Delfino Farfan. I'm a
       graduate of Texas A&M University, and studied Leadership Education and
       Development with a minor in Sports Management. I've enjoyed football since
       I was introduced to the game at a young age, but now I find myself viewing
       the sport more often than I play it.
     </p>
-    <p id="about">
+    <p class="about">
       As a spectator I crave interaction, and Fantasy Football has allowed me to
       feel more connected to the game I enjoy so much! I soon realized that I
       was not as competitive as I had hoped to be, and my biggest shortcoming

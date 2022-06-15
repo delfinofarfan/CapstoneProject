@@ -9,8 +9,4 @@ export default state => html`
     "I can't <b>BELIEVE</b> how much information I was missing out on! FFF has
     allowed me to become more competitive than ever!" - Jeff G.
   </p>
-  <p class="text-box">
-    this is where the quote goes${state.data.content} ${state.data.firstname}
-    ${state.data.lastname}
-  </p>
 `;

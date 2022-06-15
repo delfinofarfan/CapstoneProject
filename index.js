@@ -83,19 +83,6 @@ router.hooks({
           console.log("Metrics not loading", error);
           done();
         });
-    } else if (view === "Testimonials") {
-      axios
-        .get(`${process.env.OFFICE_API}`)
-        .then(response => {
-          console.log(response);
-          store.Testimonials.testimonials = response.data;
-          console.log(store.Testimonials.testimonials);
-          done();
-        })
-        .catch(error => {
-          console.log("Testimonials not loading", error);
-          done();
-        });
     } else {
       done();
     }
