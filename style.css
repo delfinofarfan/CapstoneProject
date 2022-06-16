@@ -3,13 +3,6 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
-nav > a {
-    background-color: black;
-    text-align: center;
-    width: 100px;
-    display:block;
-    padding: 20px 15px;
-}
 a {
     text-decoration: none;
     color: #fffffa;
@@ -33,18 +26,18 @@ a:hover, a:active {
 #main-border{
     margin-bottom: auto;
 }
-
 footer {
     padding: 2rem 2rem 4rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 #footer-background {
     background-image: url(assets/img/clearlogo.png);
-    background-size:contain;
-    height: 4.5em;
-    width:auto;
+    background-size:10%;
+    height: 2.5rem;
     background-color: #000000;
 }
-
 .about {
     color: #080705;
     font-weight: bolder;
@@ -65,29 +58,41 @@ footer {
     margin-right: 1rem;
   }
 #form {
+    width: 50%;
     border: solid 5px black;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 1rem;
+    display: block;
+    justify-content: center;
+    margin: 10rem 20rem;
     background: #912F40;
   }
+  #weather {
+    position: relative;
+    width: 50%;
+    color: #000000;
+    border: solid 5px #912F40;
+    display: block;
+    margin: 8rem 20rem;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,250,0.7),rgba(255,255,250,0.7));
+}
+  .formText{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+   }
 nav {
     width: 100%;
     background: black;
-    /* overflow: auto; */
-    /* display: flex; */
-    /* padding: 2% 6%; */
-    /* justify-content: space-evenly; */
-    /* align-items:baseline; */
-    /* list-style-type: none; */
-    /* height: 10px; */
+    display: flex;
+    justify-content: space-evenly;
 }
-nav > img {
-    width: 10%;
-    height: 10%;
-    object-fit: contain;
-    /* display: flex; */
-    /* justify-content: flex-start; */
+nav > a {
+    background-color: black;
+    text-align: center;
+    width: 100px;
+    display:block;
+    padding: 20px 15px;
 }
 nav > ul {
     padding: 0;
@@ -97,33 +102,6 @@ nav > ul {
 nav > li {
     float:left;
 }
-/* .nav-links {
-    flex: 1;
-    text-align: right;
-} */
-/* .nav-links  ul  li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px ;
-    position: relative;
-} */
-/* .nav-links ul li  a {
-    color: #fffffa;
-    text-decoration: none;
-    font-size: 14px;
-} */
-/* .nav-links  ul  li::after {
-    content: '';
-    width: 0%;
-    height: 4px;
-    display: block;
-    margin: auto;
-    background: #080705;
-    transition: 0.5s;
-} */
-/* .nav-links  ul  li:hover::after {
-    width: 100%;
-} */
 .text-box {
     width: auto;
     color: #000000;
@@ -131,77 +109,75 @@ nav > li {
     text-align: center;
     background: linear-gradient(rgba(255,255,250,0.7),rgba(255,255,250,0.7));
 }
-.text-box p {
-    font-size: 14px;
-    color: #fffffa;
+#text-box-1 {
+    border:#000000;
+    border-style: dashed;
+    color: #000000;
+    /* text-align: center; */
+    display:flex;
+    width: 40%;
+    padding: 50px;
+    margin: 10px 30px;
+    background: linear-gradient(rgba(255,255,250,0.7),rgba(255,255,250,0.7));
 }
-.testButton {
-    display: inline-block;
+#text-box-2 {
+    border: #080705;
+    border-style: dotted;
+    color: #000000;
+    /* text-align: center; */
+    display: flex;
+    width: 40%;
+    padding: 50px;
+    margin: 30px 80px;
+    background: linear-gradient(rgba(255,255,250,0.7),rgba(255,255,250,0.7));
+}
+
+#testButton {
     text-decoration: none;
     color: #fffffa;
     border: 3px solid #080705;
     padding: 12px 34px;
     font-size: 14px;
     background: transparent;
-    position:relative;
     width:200px;
+    margin: 1rem 34rem;
     cursor: pointer;
-    display:flex;
+    display: flex;
     justify-content: center;
+    position: absolute;
 }
-.testButton:hover {
+#testButton:hover {
     border: 3px solid #912F40;
     background: #912F40;
     transition: .5s;
 }
-nav .fa-bars {
-    display:none;
-}
-#football {
+.football {
     font-family: 'Nunito', sans-serif;
     font-size: 1.6em;
     height: auto;
     width: 75%;
-    margin: auto;
+    margin: 10rem 12rem;
   }
 
-  #football tbody {
+  .football tbody {
     width: 90%;
     background: #fffffa;
   }
 
-  #football th {
+  .football th {
     text-align: left;
   }
 
-  #football td,th {
+  .football td,th {
     width: 25%;
   }
 @media(min-width: 550px){
-     .hidden--mobil {
-        display: none !important;
-     }
-    nav {
-        /* display: flex; */
-        /* align-items: center; */
-        /* flex-direction: row; */
-        width: 100%;
-
+        nav {
+        display: flex;
+        justify-content: space-evenly;
     }
-     /* .nav-links {
-         position: absolute;
-         background: #912F40;
-         height: 100vh;
-         width: 200px;
-         top: 0;
-         right: 0;
-         text-align: left;
-         z-index: 2;
-     } */
-     /* .nav-links fa {
-         display: block;
-         color: pink;
-         font-size: 10px;
-         cursor: pointer;
-     } */
+    nav > a {
+        display: flex;
+        justify-content: space-evenly;
+    }
     }
