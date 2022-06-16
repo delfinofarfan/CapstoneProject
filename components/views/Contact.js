@@ -8,39 +8,44 @@ export default () => html`
       action="https://formspree.io/f/meqnpdzw"
       method="post"
     >
-      <fieldset id="fs-frm-inputs">
-        <label for="full-name">Full Name</label>
-        <input
-          type="text"
-          name="name"
-          id="full-name"
-          placeholder="First and Last"
-          required=""
-        />
-        <label for="email-address">Email Address</label>
-        <input
-          type="email"
-          name="_replyto"
-          id="email-address"
-          placeholder="email@domain.tld"
-          required=""
-        />
-        <label for="message">Message</label>
-        <textarea
-          rows="5"
-          name="message"
-          id="message"
-          placeholder="Feedback"
-          required=""
-        ></textarea>
-        <input
-          type="hidden"
-          name="_subject"
-          id="email-subject"
-          value="Contact Form Submission"
-        />
+      <fieldset>
+        <div class="formText">
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="First and Last"
+            required=""
+          />
+        </div>
+        <div class="formText">
+          <label for="email-address">Email Address</label>
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="email@domain.tld"
+            required=""
+          />
+        </div>
+        <div class="formText">
+          <label for="message">Message</label>
+          <textarea
+            rows="5"
+            name="message"
+            placeholder="Feedback"
+            required=""
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
+        </div>
       </fieldset>
-      <input type="submit" value="Submit" />
+      <div class="formText">
+        <input type="submit" value="Submit" />
+      </div>
     </form>
   </section>
 `;

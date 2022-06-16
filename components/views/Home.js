@@ -12,8 +12,8 @@ export default state => html`
         Football.</b
       >
     </p>
-    <a href="/Testimonials" class="testButton">User Testimonials</a>
-    <h4 class="text-box">
+    <a id="testButton" href="/Testimonials">User Testimonials</a>
+    <h4 id="weather">
       Weather in ${state.weather.city} ${state.weather.temp}F, feels like
       ${state.weather.feelsLike}F
     </h4>

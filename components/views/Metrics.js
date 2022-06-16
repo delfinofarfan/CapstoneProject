@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default state => html`
-  <table id="football">
+  <table class="football">
     <tr>
       <th>Name</th>
       <th>Height</th>
