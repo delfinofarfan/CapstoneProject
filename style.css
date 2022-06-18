@@ -23,14 +23,12 @@ a:hover, a:active {
     background-size: cover;
     position: relative;
 }
-#main-border{
-    margin-bottom: auto;
-}
 footer {
-    padding: 2rem 2rem 4rem;
+    padding: 40px 40px 20px;
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 2;
+    width:100%;
+    display: block;
 }
 #footer-background {
     background-image: url(assets/img/clearlogo.png);
@@ -45,7 +43,7 @@ footer {
     display: flex;
     justify-content: right;
     flex-direction: column;
-    padding-bottom: 5%;
+    padding: 20px;
 }
 #bio {
     margin: 1rem;
@@ -62,16 +60,17 @@ footer {
     border: solid 5px black;
     display: block;
     justify-content: center;
-    margin: 10rem 20rem;
+    /* margin: 10rem 20rem; */
     background: #912F40;
   }
   #weather {
-    position: relative;
+    float: inherit;
+    /* position: relative; */
     width: 50%;
     color: #000000;
     border: solid 5px #912F40;
-    display: block;
-    margin: 8rem 20rem;
+    /* display: block; */
+    /* margin: 10% 20%; */
     text-align: center;
     background: linear-gradient(rgba(255,255,250,0.7),rgba(255,255,250,0.7));
 }
@@ -113,7 +112,7 @@ nav > li {
     border:#000000;
     border-style: dashed;
     color: #000000;
-    /* text-align: center; */
+    text-align: center;
     display:flex;
     width: 40%;
     padding: 50px;
@@ -124,7 +123,7 @@ nav > li {
     border: #080705;
     border-style: dotted;
     color: #000000;
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     width: 40%;
     padding: 50px;
@@ -140,11 +139,14 @@ nav > li {
     font-size: 14px;
     background: transparent;
     width:200px;
-    margin: 1rem 34rem;
+    /* margin: 15vh 70vh; */
+    /* margin: 20vh 40vw; */
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* position:static; */
+    text-align: center;
+    float: right;
 }
 #testButton:hover {
     border: 3px solid #912F40;
@@ -156,7 +158,7 @@ nav > li {
     font-size: 1.6em;
     height: auto;
     width: 75%;
-    margin: 10rem 12rem;
+    margin: 5% 15%;
   }
 
   .football tbody {
@@ -171,13 +173,29 @@ nav > li {
   .football td,th {
     width: 25%;
   }
-@media(min-width: 550px){
+@media(max-width: 550px){
+    *{
+        color: aquamarine;
+    }
         nav {
         display: flex;
         justify-content: space-evenly;
+        width:100%;
     }
     nav > a {
         display: flex;
         justify-content: space-evenly;
+    }
+    .main {
+        background-image: none;
+        background-color: #912F40;
+        width: auto;
+    }
+    #footer-background{
+        background-image: none;
+        background-color: #000000;
+    }
+    #testButton {
+        position: absolute;
     }
     }

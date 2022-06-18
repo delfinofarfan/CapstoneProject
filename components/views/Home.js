@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default state => html`
-  <section id="main-border">
+  <section>
     <h1 class="text-box">Fantasy Football made EASY</h1>
     <p class="home">
       The Farfan Fantasy Football Score (FFF Score) takes the burden off the
