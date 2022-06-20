@@ -60,7 +60,6 @@ footer {
     border: solid 5px black;
     display: block;
     justify-content: center;
-    /* margin: 10rem 20rem; */
     background: #912F40;
   }
   #weather {
@@ -70,7 +69,7 @@ footer {
     color: #000000;
     border: solid 5px #912F40;
     /* display: block; */
-    /* margin: 10% 20%; */
+    margin: 10% 20%;
     text-align: center;
     background: linear-gradient(rgba(255,255,250,0.7),rgba(255,255,250,0.7));
 }
@@ -140,7 +139,7 @@ nav > li {
     background: transparent;
     width:200px;
     /* margin: 15vh 70vh; */
-    /* margin: 20vh 40vw; */
+    margin: 20vh 40vw;
     cursor: pointer;
     /* display: flex; */
     /* justify-content: center; */
@@ -155,13 +154,13 @@ nav > li {
 }
 .football {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.6em;
+    font-size: 1.25em;
     height: auto;
     width: 75%;
     margin: 5% 15%;
   }
 
-  .football tbody {
+  .football > tbody {
     width: 90%;
     background: #fffffa;
   }
@@ -196,6 +195,8 @@ nav > li {
         background-color: #000000;
     }
     #testButton {
-        position: absolute;
+        position: relative;
+    }
+    #weather {
     }
     }
