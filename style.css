@@ -14,6 +14,7 @@ a:hover, a:active {
     background:linear-gradient(rgba(255,255,250,0.7),rgba(255,255,250,0.7));
     position: relative;
     text-align: center;
+    font-size: 25px;
 }
 .main {
     min-height: 100vh;
@@ -61,8 +62,11 @@ footer {
     display: block;
     justify-content: center;
     background: #912F40;
+    font-size: 25px;
+    margin: 5% 25%;
   }
   #weather {
+    font-size: 20px;
     float: inherit;
     /* position: relative; */
     width: 50%;
@@ -84,6 +88,7 @@ nav {
     background: black;
     display: flex;
     justify-content: space-evenly;
+    font-size: 30px;
 }
 nav > a {
     background-color: black;
@@ -101,6 +106,7 @@ nav > li {
     float:left;
 }
 .text-box {
+    font-size: 40px;
     width: auto;
     color: #000000;
     position: relative;
@@ -114,11 +120,13 @@ nav > li {
     text-align: center;
     display:flex;
     width: 40%;
+    font-size: 20px;
     padding: 50px;
     margin: 10px 30px;
     background: linear-gradient(rgba(255,255,250,0.7),rgba(255,255,250,0.7));
 }
 #text-box-2 {
+    font-size: 20px;
     border: #080705;
     border-style: dotted;
     color: #000000;
@@ -142,18 +150,20 @@ nav > li {
     cursor: pointer;
     text-align: center;
     float: right;
+    font-size: 25px;
 }
 #testButton:hover {
     border: 3px solid #912F40;
     background: #912F40;
-    transition: .5s;
+    transition: 1s;
 }
 .football {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25em;
+    font-size: 30px;
     height: auto;
     width: 75%;
-    margin: 5% 20%;
+    margin: 5% 15%;
+    text-align: center;
   }
 
   .football > tbody {
@@ -161,11 +171,7 @@ nav > li {
     background: #fffffa;
   }
 
-  .football th {
-    text-align: left;
-  }
-
-  .football td,th {
+  .football > td,th {
     width: 25%;
   }
 @media(max-width: 550px){
